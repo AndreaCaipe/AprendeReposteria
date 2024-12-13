@@ -1,0 +1,191 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f6f6;
+    color: #0f0f0f;
+    line-height: 1.6;
+    min-width: 100vh;
+  
+  }
+  
+  h1, h2, h3 {
+    color: #362828; 
+    text-align: center;
+  
+  }
+  
+  p {
+    margin: 0.9rem 0.9rem;
+    
+  }
+  
+  a {
+    text-decoration:none;
+    color: #d48282;
+  }
+  
+  
+  .navbar {
+    background-color: #d48282;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    
+    
+  }
+  
+  .navbar a {
+    color: #362828;
+    font-weight: bold;
+    font-size: 1rem;
+    
+  }
+  
+  .navbar a:hover {
+    text-decoration:none;
+    background-color: #d35f5f;
+    padding: auto;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    background-color: #7a7272;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    
+  }
+  
+  .container{
+    background-image: url(/src/Image/resposteria3.png);
+    
+    
+
+  }
+  .home, .users-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap: 20x;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  .recipe-card {
+    background-color:#e9d4d4;
+    border: 1px solid  #d48282;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    flex: 1 1 calc(33.33% - 2rem);
+    max-width: 500px;
+    text-align: center;
+    min-width: 250px;
+    
+  }
+  
+  .recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .recipe-card h3 {
+    margin: 0.5rem 0;
+  }
+  
+  .recipe-card p {
+    color: #040404;
+    font-size: 0.9rem;
+
+  }
+  
+  .user-card {
+    background-color:#e9d4d4;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.33% - 2rem);
+  }
+  
+  .user-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #040404;
+  }
+  
+  .user-card p {
+    font-size: 0.9rem;
+    color: #312f2f;
+  }
+  
+  /* Forms */
+  form {
+    background-color:#e9d4d4;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  form button {
+    background-color: #d35f5f;
+    color:#040404;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color:#d48282;
+  }
+  
+  .center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .recipe-card, .user-card {
+      flex: 1 1 calc(50% - 2rem);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .recipe-card, .user-card {
+      flex: 1 1 100%; 
+    }
+  }
+  
+  
+  
+  
+
+  
+
